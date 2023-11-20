@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
 
-    <div class="container">
-        <h1>Triangle Quiz</h1>
-    </div>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html">Is Triangle?</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="">Hypotenuse</a>
+            <a href="">Area</a>
+        </ul>
+    </nav>
+
+    <form action="" class="quiz-form">
+        <div class="container">
+            <h1>Triangle Quiz</h1>
+            <h2>Choose the correct option, for each correct you'll get 1 marks</h2>
+
+            <div class="question">
+                <p> Q1) What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <input type="radio" id="Q1Choice1" name="q1" value="45">
+                <label for="Q1Choice1">45°</label>
+
+                <input type="radio" id="Q1Choice2" name="q1" value="90">
+                <label for="Q1Choice2">90°</label>
+
+                <input type="radio" id="Q1Choice3" name="q1" value="60">
+                <label for="Q1Choice3">60°</label>
+            </div>
+
+
+            <div class="question">
+                <p> Q2) What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <input type="radio" id="Q2Choice1" name="q2" value="obtuse">
+                <label for="Q2Choice1">obtuse</label>
+
+                <input type="radio" id="Q2Choice2" name="q2" value="acute">
+                <label for="Q2Choice2">acute</label>
+
+                <input type="radio" id="Q2Choice3" name="q2" value="right angled">
+                <label for="Q2Choice3">right angled</label>
+            </div>
+
+
+
+            <button id="submit-answer">Submit Answer</button>
+
+            <div id="score-output"></div>
+        </div>
+    </form>
+    <script src="quizApp.js"></script>
 </body>
+
 </html>

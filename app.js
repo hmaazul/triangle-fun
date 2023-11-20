@@ -1,7 +1,7 @@
 const angle1 = document.querySelector("#angle-1");
 const angle2 = document.querySelector("#angle-2");
 const angle3 = document.querySelector("#angle-3");
-const isTriangle = document.querySelector("#is-triangle");
+const isTriangleBtn = document.querySelector("#is-triangle-btn");
 const isTraingleOutput = document.querySelector("#is-triangle-output");
 
 function calculateSum(){
@@ -21,4 +21,4 @@ function isTriangleValid(){
     }
 }
 
-isTriangle.addEventListener('click', isTriangleValid);
+isTriangleBtn.addEventListener('click', isTriangleValid);
