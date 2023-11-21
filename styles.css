@@ -22,10 +22,11 @@ h1 {
     font-size: large;
     margin: 0.5rem auto;
     text-align: center;
-    color: white;
+    /* color: white; */
 }
 
 input {
+    display: block;
     border: 2px solid white;
     border-radius: 0.5rem;
 }
