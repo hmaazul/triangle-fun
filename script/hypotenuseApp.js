@@ -6,7 +6,13 @@ const checkSide = document.querySelector('#check-side');
 
 function calculateHypotenuse(e){
     e.preventDefault();
-    console.log(sideA.value);
+    var answer = 0;
+    var sq1 = Math.pow(sideA.value,2);
+    var sq2 = Math.pow(sideB.value,2);
+    var sum = sq1+ sq2;
+    answer = Math.sqrt(sum);
+    //  console.log(answer);
+    checkHypotenuse.innerText = "Hypotenuse is "+ answer;
 }
 
 checkSide.addEventListener('click',calculateHypotenuse);
