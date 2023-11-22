@@ -3,9 +3,7 @@
 }
 
 body {
-    /* background-color: var(--primary-color); */
-    /* margin: 0;
-    padding: 0; */
+    
 }
 
 * {
@@ -29,51 +27,59 @@ nav a {
 .item-active {
     text-decoration: underline;
 }
-.container {
-    width: 70%;
-    margin: auto;
-    /* padding: 5rem; */
-    
-}
 
 h1 {
     text-align: center;
+    margin: 2rem auto;
 }
+.container {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+
 
 .input-container {
-    
     margin: 1rem auto;
-    /* margin-left: 5rem; */
 }
-
-.label {
-    margin: ;
-}
-
-
-.input {
-    display: block;
-    width: 70%;
+.input-container label {
     font-size: large;
-    /* margin: 0.5rem auto; */
-    /* text-align: center; */
-    /* color: white; */
+    font-weight:500;
+    display: block;
 }
 
-/* input {
-    display: block;
-    border: 2px solid white;
-    border-radius: 0.5rem;
-} */
+.input-container input {
+    width: 90%;
+    margin: 0.5rem auto;
+    font-size: 1rem;
+    padding: 0.5rem;    
+    border: 1px solid black;
+}
 
 .btn {
     display: block;
     font-size: large;
-    border: 2px solid white;
-    /* border-radius: 0.5rem; */
+    border: 1px solid var(--primary-color);
+    width: 80%;
     padding: 0.5rem;
-    width: 30%;
     margin: 1rem auto;
-    background-color: white;
+    background-color: var(--primary-color);
+    color: white;
 }
 
+/* Quiz App */
+.quiz-container {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+.question-container {
+    margin: 1rem auto;
+    font-size: large;
+    border: 2px solid var(--primary-color);
+    padding: 1rem;
+}
+.quiz-container p {
+    /* margin rem 0; */
+    padding: 1rem auto;
+}
